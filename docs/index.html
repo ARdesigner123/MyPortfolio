@@ -68,12 +68,16 @@
     <!-- 3D Model Generator Section -->
     <section class="model-generator" id="model-generator">
         <h2>3D <span>Model Generator</span></h2>
-        <div class="generator-container">
-            <p>Describe the 3D model you want. For example:
-                <i>"Cartoon hero character"</i>, <i>"Military tank"</i>, or <i>"Sci-fi rifle"</i>.
+        <div class="generator-container">            
+            <p>
+                Describe the 3D model you want:<br>
+                <i>Currently available options:</i><br>
+                <strong>Cartoon hero character</strong>, 
+                <strong>Military tank</strong>, 
+                <strong>Sci-fi rifle</strong>.
             </p>
-            <input type="text" id="prompt-input" placeholder="Enter your 3D model idea here...">
-            <button onclick="generateModel()">Generate Model</button>
+            <input type="text" id="prompt-input" placeholder="Type one of the options above..." />
+            <button id="generate-btn" onclick="generateModel()">🚀 Generate Model</button>
             <div id="generation-status"></div>
             
             <div id="model-preview" style="display:none;">
@@ -83,7 +87,7 @@
             
             <div id="download-section" style="display: none;">
                 <h3>Download your 3D model:</h3>
-                <a id="zip-download" href="#" download class="btn">Download Model (.zip)</a>
+                <a id="zip-download" href="#" download class="btn">⬇️ Download Model (.zip)</a>
             </div>
         </div>
     </section>
