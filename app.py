@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
+import os
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
@@ -28,5 +29,6 @@ def generate():
         return jsonify(model)
     return jsonify({}), 404
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5050)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5050))  # Use PORT from Render, or default to 5050
+    app.run(host="0.0.0.0", port=port, debug=True)
