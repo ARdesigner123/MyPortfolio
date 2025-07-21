@@ -10,6 +10,10 @@ MODEL_MAP = {
         "zip": "https://raw.githubusercontent.com/ARdesigner123/3dmodels/main/cartoon-hero.zip",
         "preview": "https://raw.githubusercontent.com/ARdesigner123/3dmodels/main/cartoon-hero.glb"
     },
+    "military tank": {
+        "zip": "https://raw.githubusercontent.com/ARdesigner123/3dmodels/main/military-tank.zip",
+        "preview": "https://raw.githubusercontent.com/ARdesigner123/3dmodels/main/military-tank.glb"
+    },
     "sci-fi rifle": {
         "zip": "https://raw.githubusercontent.com/ARdesigner123/3dmodels/main/sci-fi-rifle.zip",
         "preview": "https://raw.githubusercontent.com/ARdesigner123/3dmodels/main/sci-fi-rifle.glb"
